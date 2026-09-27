@@ -49,3 +49,43 @@ h3 { margin: 12px 0 7px; font-size: 1.15rem; }
 footer { display: flex; justify-content: space-between; gap: 20px; padding: 28px 6vw; border-top: 1px solid var(--line); color: #6f7b8f; font-size: .82rem; }
 @media (max-width: 900px) { .hero, .split { grid-template-columns: 1fr; } .hero-art { order: -1; } .grid { grid-template-columns: repeat(2, 1fr); } .cta { margin-left: 6vw; margin-right: 6vw; } }
 @media (max-width: 600px) { .nav nav a:not(.nav-button) { display: none; } .hero { padding-top: 55px; } .grid { grid-template-columns: 1fr; } .cta, footer { flex-direction: column; align-items: flex-start; } .section { padding-top: 70px; padding-bottom: 70px; } }
+
+
+.pricing-section {
+  padding-top: 40px;
+}
+
+.pricing-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 32px;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 20px;
+  background: rgba(255,255,255,.035);
+  box-shadow: 0 20px 60px rgba(0,0,0,.25);
+}
+
+.pricing-card h3 {
+  margin: 8px 0;
+  font-size: 30px;
+}
+
+.pricing-card p {
+  max-width: 650px;
+  margin: 0;
+}
+
+.price-label {
+  font-size: 12px;
+  letter-spacing: .16em;
+  opacity: .7;
+}
+
+@media (max-width: 760px) {
+  .pricing-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
